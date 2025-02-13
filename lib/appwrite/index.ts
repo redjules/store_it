@@ -8,13 +8,15 @@ export const createSessionClient = async () => {
   const client = new Client()
     .setEndpoint(appwriteConfig.endpointUrl)
     .setProject(appwriteConfig.projectId);
+  console.log("line11:", client);
 
   const session = (await cookies()).get("appwrite-session");
 
+  console.log("line15", session);
   if (!session || !session.value) throw new Error("No session");
 
   client.setSession(session.value);
-
+  console.log("line19", client);
   return {
     get account() {
       return new Account(client);
