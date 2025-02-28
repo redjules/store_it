@@ -33,6 +33,7 @@ const OtpModal = ({
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  // Runs when user presses 'Submit' button on OTP modal
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setIsLoading(true);
@@ -40,8 +41,8 @@ const OtpModal = ({
     console.log({ accountId, password });
 
     try {
+      console.log("handleSubmit() OTP Modal");
       const sessionId = await verifySecret({ accountId, password });
-
       console.log({ sessionId });
 
       if (sessionId) router.push("/");
