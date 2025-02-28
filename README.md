@@ -4,7 +4,7 @@ https://store-it-ui3s.vercel.app/sign-in
 
 ## Screenshots
 
-![Screenshot](images/screenshot1.png)
+![Screenshot](1.png)
 
 ## Tech Stack
 
