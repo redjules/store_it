@@ -1,3 +1,15 @@
+## Final app
+
+https://store-it-ui3s.vercel.app/sign-in
+
+## Screenshots
+
+![Screenshot](images/screenshot1.png)
+
+## Tech Stack
+
+Next.js 15, TypeScript, Tailwind CSS, Chart.js, Appwrite
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
